@@ -58,7 +58,7 @@ Public Class Confirmation_Dialog
     'Handles OK button (create appointments)
     Private Sub OK_Button_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OK_Button.Click
         Try
-            CreateAppointments()+++
+            CreateAppointments()
         Catch ex As Exception
             Diagnostics.Debug.WriteLine("Unable to create appointment:" + ex.Message) 'Don't show an error message to the user here because CreateAppointments() will do this
         End Try
